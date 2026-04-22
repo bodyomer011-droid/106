@@ -67,7 +67,7 @@ body{background:var(--bg);min-height:100vh;font-size:14px;color:var(--dark)}
 .sb-user .su-email{color:rgba(255,255,255,.5);font-size:11px;margin-bottom:4px}
 .sb-user .su-shift{color:rgba(255,255,255,.7);font-size:11px;margin-bottom:6px;font-style:italic}
 .role-badge{display:inline-block;padding:3px 10px;border-radius:10px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
-.rb-admin{background:#fbbc04;color:#000}.rb-sm{background:#e53935;color:#fff}.rb-svv{background:#8e24aa;color:#fff}
+.rb-admin{background:#fbbc04;color:#000}.rb-sm{background:#e53935;color:#fff}.rb-ssv{background:#8e24aa;color:#fff}
 .rb-sv{background:#34a853;color:#fff}.rb-qtc{background:#00bcd4;color:#fff}.rb-wla{background:#43a047;color:#fff}
 .logout-btn{display:flex;align-items:center;gap:8px;padding:8px 12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:8px;color:rgba(255,255,255,.75);font-size:13px;cursor:pointer;width:100%;transition:all .15s}
 .logout-btn:hover{background:rgba(255,255,255,.16);color:white}
@@ -131,10 +131,13 @@ tr.row-active td{background:#dce8fb!important;font-weight:700!important;color:va
 tbody tr.data-row{cursor:pointer}tbody tr.data-row:hover td{background:var(--blue-bg)!important}
 tbody tr.data-row.has-link:hover td{background:#e8f5e9!important}
 .badge{display:inline-block;padding:3px 10px;border-radius:10px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
-.b-admin{background:var(--orange-lt);color:#7f4f00}.b-sm{background:#ffebee;color:#b71c1c}.b-svv{background:#f3e5f5;color:#4a148c}.b-sv{background:var(--green-lt);color:#155724}.b-qtc{background:#e0f7fa;color:#006064}
+.b-admin{background:var(--orange-lt);color:#7f4f00}.b-sm{background:#ffebee;color:#b71c1c}.b-ssv{background:#f3e5f5;color:#4a148c}.b-sv{background:var(--green-lt);color:#155724}.b-qtc{background:#e0f7fa;color:#006064}
 .b-active{background:var(--green-lt);color:#155724}.b-inactive{background:var(--red-lt);color:var(--red)}
 .b-fp{background:#e8f5e9;color:#2e7d32}.b-qa{background:#e3f2fd;color:#0d47a1}
-.b-morning{background:#fff3e0;color:#e65100}.b-night{background:#e8eaf6;color:#283593}.b-overnight{background:#e8f5e9;color:#1b5e20}.b-overshift{background:#f3e5f5;color:#4a148c}
+.b-morning{background:#f1f3f4;color:#5f6368}
+.b-night{background:#f1f3f4;color:#5f6368}
+.b-overnight{background:#f1f3f4;color:#5f6368}
+.b-overshift{background:#f1f3f4;color:#5f6368}
 .card-drill{background:white;border:1.5px solid var(--blue-lt);border-radius:12px;margin-bottom:20px;overflow:hidden;box-shadow:var(--shadow);animation:fadeUp .2s ease}
 .card-drill-hdr{background:var(--blue);color:white;padding:10px 16px;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:space-between}
 .drill-close{background:rgba(255,255,255,.2);border:none;color:white;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center}
@@ -241,7 +244,10 @@ body.dark .content,body.dark .main{background:#0f1117}
 body.dark td{color:#e8eaf0}body.dark .detail-val{color:#e8eaf0}body.dark .detail-lbl{color:#9aa0b4}
 body.dark tbody tr:nth-child(even) td{background:#252840}body.dark tbody tr:hover td{background:#1a2040!important}body.dark tr.total-row td{background:#1c4587;color:white}body.dark .detail-item{background:#252840}
 body.dark input,body.dark select,body.dark .dp-input,body.dark .fb-time,body.dark .sel-inp{background:#252840!important;color:#e8eaf0!important;border-color:#2d3250!important}
-body.dark .badge.b-morning{background:#3d2800;color:#ffb74d}body.dark .badge.b-night{background:#1a1f3d;color:#90caf9}body.dark .badge.b-overnight{background:#1b2e1b;color:#81c784}body.dark .badge.b-overshift{background:#2d1f3d;color:#ce93d8}body.dark .badge.b-fp{background:#1b2e1b;color:#81c784}body.dark .badge.b-qa{background:#1a2540;color:#64b5f6}body.dark .badge.b-active{background:#1b2e1b;color:#81c784}body.dark .badge.b-inactive{background:#3d1a1a;color:#ef9a9a}
+body.dark .badge.b-morning{background:#2d3250;color:#9aa0b4}
+body.dark .badge.b-night{background:#2d3250;color:#9aa0b4}
+body.dark .badge.b-overnight{background:#2d3250;color:#9aa0b4}
+body.dark .badge.b-overshift{background:#2d3250;color:#9aa0b4}body.dark .badge.b-fp{background:#1b2e1b;color:#81c784}body.dark .badge.b-qa{background:#1a2540;color:#64b5f6}body.dark .badge.b-active{background:#1b2e1b;color:#81c784}body.dark .badge.b-inactive{background:#3d1a1a;color:#ef9a9a}
 body.dark .mod-btn{background:#252840;color:#9aa0b4;border-color:#2d3250}body.dark .mod-btn:hover{border-color:#4d7fff;color:#7eaaff}
 body.dark .lab-sort-pill{background:#252840;color:#9aa0b4;border-color:#2d3250}body.dark .lab-sort-pill:hover{border-color:#4d7fff;color:#7eaaff;background:#1a2040}
 body.dark .drill-unit-row{background:#1a2040}body.dark .drill-shift-btn{background:#252840;color:#9aa0b4;border-color:#2d3250}body.dark .drill-shift-btn.active{background:#1c4587;color:white}
@@ -306,6 +312,14 @@ body.dark #attDetailsArea [style*="color:var(--gray)"]{color:#9aa0b4!important}
 body.dark #attDetailsArea [style*="border-bottom:1px solid"]{border-color:#2d3250!important}
 body.dark #attDetailsArea .att-person-row [style*="background:white"]{background:#252840!important;border-color:#4d7fff!important}
 body.dark #attDetailsArea .att-person-row [style*="color:var(--blue)"]{color:#7eaaff!important}
+  body.dark .att-person-row-item { 
+  background: #1b2e1b !important; 
+  border-color: rgba(30,142,62,.2) !important; 
+  color: #e8eaf0 !important;
+}
+body.dark .att-person-row-item span { 
+  color: #e8eaf0 !important; 
+}
   /* ══ DARK MODE — Details of Attendance — COMPLETE FIX ══ */
 
 /* صفوف الموظفين (Present / Absent / Training) */
@@ -353,6 +367,17 @@ body.dark #qtcTop4 > div > div{background:#1e2130!important}
 body.dark #qtcTop4 [style*="padding:18px;text-align:center"]{color:#9aa0b4!important}
 body.dark .lab-sort-pill{background:#252840!important}
 body.dark #qtcSortPills .lab-sort-pill{background:#252840!important;border-color:#2d3250!important}
+  /* ══ DARK MODE — QTC Mini Popup ══ */
+body.dark #qtcMiniPopup > div { background: #1e2130 !important; }
+body.dark #qtcMiniPopupInner [style*="background:#e8f5e9"] { background: #1b2e1b !important; }
+body.dark #qtcMiniPopupInner [style*="background:#fff3cd"] { background: #3d2800 !important; }
+body.dark #qtcMiniPopupInner [style*="background:#e0f7fa"] { background: #0a2e30 !important; }
+body.dark #qtcMiniPopupInner [style*="background:#f3e5f5"] { background: #2d1f3d !important; }
+body.dark #qtcMiniPopupInner [style*="color:#1e8e3e"] { color: #81c784 !important; }
+body.dark #qtcMiniPopupInner [style*="color:#e37400"] { color: #ffb74d !important; }
+body.dark #qtcMiniPopupInner [style*="color:#007b83"] { color: #4dd0e1 !important; }
+body.dark #qtcMiniPopupInner [style*="color:#7b1fa2"] { color: #ce93d8 !important; }
+body.dark #qtcMiniPopupInner [style*="color:white"] { color: white !important; }  
   att-card-details.open {
   max-height: 200px !important;
   opacity: 1 !important;
@@ -553,7 +578,7 @@ body.dark #dodArea .card-drill { background: #1e2130 !important; border-color: #
   ⚠️ يجب تعيين <strong>APPS_SCRIPT_URL</strong> أولاً — اقرأ التعليمات في أعلى الكود
 </div>
 <!-- شاشة الانتظار -->
-<div id="waitingScreen" style="display:none;position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#0d2b6b 0%,#1c4587 50%,#2d5fa8 100%);align-items:center;justify-content:center;">
+<div id="waitingScreen" style="display:none;position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#0d2b6b 0%,#1c4587 50%,#2d5fa8 100%);align-items:center;justify-content:center;min-height:100vh;width:100vw;">
     <div class="login-box" style="text-align:center">
       <div class="login-logo">
         <div class="logo-badge">
@@ -684,17 +709,17 @@ body.dark #dodArea .card-drill { background: #1e2130 !important; border-color: #
       </div>
       <nav class="sb-nav">
         <div class="nav-section">Main</div>
-        <div class="nav-item active" id="nav-home" data-page="home">🏠 Home</div>
-        <div class="nav-item" id="nav-data" data-page="data">📊 Data</div>
-        <div class="nav-item" id="nav-detailsofdata" data-page="detailsofdata">📋 Details of Data</div>
-        <div class="nav-item" id="nav-labelers" data-page="labelers">🏆 Top Labelers</div>
-        <div class="nav-item" id="nav-qtc" data-page="qtc">⭐ Top QTC</div>
-        <div class="nav-item" id="nav-qtcstats" data-page="qtcstats">📈 QTC Stats</div>
+        <div class="nav-item active" id="nav-home" data-page="home">Home</div>
+        <div class="nav-item" id="nav-data" data-page="data">Data</div>
+        <div class="nav-item" id="nav-detailsofdata" data-page="detailsofdata">Details of Data</div>
+        <div class="nav-item" id="nav-labelers" data-page="labelers">Top Labelers</div>
+        <div class="nav-item" id="nav-qtc" data-page="qtc">Top QTC</div>
+        <div class="nav-item" id="nav-qtcstats" data-page="qtcstats">QTC Stats</div>
         <div class="nav-section admin-only" style="display:none">Admin</div>
-        <div class="nav-item" id="nav-attendance" data-page="attendance">📋 Attendance</div>
-        <div class="nav-item" id="nav-attdetails" data-page="attdetails">👥 Details of Attendance</div>
-        <div class="nav-item" id="nav-otdetails" data-page="otdetails">⏱️ Details of OT</div>
-        <div class="nav-item" id="nav-users" data-page="users" style="display:none">👤 Users</div>
+<div class="nav-item" id="nav-attendance" data-page="attendance" style="display:none">Attendance</div>
+<div class="nav-item" id="nav-attdetails" data-page="attdetails" style="display:none">Details of Attendance</div>
+<div class="nav-item" id="nav-otdetails" data-page="otdetails" style="display:none">Details of OT</div>
+<div class="nav-item" id="nav-users" data-page="users" style="display:none">Users</div>
       </nav>
       <div class="sb-footer">
         <div class="sb-user">
@@ -703,8 +728,8 @@ body.dark #dodArea .card-drill { background: #1e2130 !important; border-color: #
           <div class="su-shift" id="sbShift" style="display:none"></div>
           <span class="role-badge" id="sbRole">-</span>
         </div>
-        <button class="logout-btn" id="logoutBtn">🚪 Sign Out</button>
-        <button class="logout-btn" id="changePwdBtn" style="margin-top:8px;background:rgba(255,255,255,.05)">🔑 Change Password</button>
+        <button class="logout-btn" id="logoutBtn">Sign Out</button>
+        <button class="logout-btn" id="changePwdBtn" style="margin-top:8px;background:rgba(255,255,255,.05)">Change Password</button>
       </div>
     </div>
 
@@ -742,6 +767,21 @@ body.dark #dodArea .card-drill { background: #1e2130 !important; border-color: #
             <select class="fb-time" id="gToTime"></select>
             <button class="fbtn fbtn-primary" id="btnGlobalFilter" style="margin-left:auto;">Filter</button>
             <button class="fbtn fbtn-ghost" id="btnGlobalClear">✕ Clear</button>
+            <!-- Auto Reload Toggle -->
+<div id="autoReloadWrap" style="display:flex;align-items:center;gap:8px;padding:4px 12px;background:var(--gray-lt);border-radius:20px;border:1.5px solid var(--border)">
+  <span style="font-size:11px;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.5px;white-space:nowrap">Auto Reload</span>
+  <div id="arToggle" onclick="toggleAutoReload()" style="width:38px;height:20px;border-radius:10px;background:#ccc;cursor:pointer;position:relative;transition:background .3s;flex-shrink:0">
+    <div id="arThumb" style="position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:white;transition:left .3s;box-shadow:0 1px 3px rgba(0,0,0,.2)"></div>
+  </div>
+  <span id="arLabel" style="font-size:11px;font-weight:700;color:var(--gray);min-width:28px">OFF</span>
+  <select id="arInterval" style="font-size:11px;font-weight:700;border:1px solid var(--border);border-radius:6px;padding:2px 6px;background:white;color:var(--dark);outline:none;display:none">
+    <option value="30000">30s</option>
+    <option value="60000" selected>1m</option>
+    <option value="120000">2m</option>
+    <option value="300000">5m</option>
+  </select>
+  <span id="arCountdown" style="font-size:11px;font-weight:800;color:var(--blue);min-width:30px;display:none"></span>
+</div>
           </div>
       </div>
 
@@ -873,7 +913,7 @@ body.dark #dodArea .card-drill { background: #1e2130 !important; border-color: #
     <div class="inp-wrap"><label>Name In Teams <span style="color:var(--gray);font-weight:400;text-transform:none;font-size:11px">(للـ QTC Stats)</span></label><input type="text" id="mTeamsName" placeholder="e.g. Hazem Nader (N)"></div>
     <div class="inp-wrap"><label>Role</label>
       <select id="mRole" class="sel-inp">
-        <option value="admin">Admin</option><option value="sm">SM</option><option value="svv">SVV</option>
+        <option value="admin">Admin</option><option value="sm">SM</option><option value="ssv">SSV</option>
         <option value="sv">SV</option><option value="qtc" selected>QTC</option><option value="wla">WLA</option>
       </select>
     </div>
@@ -953,7 +993,7 @@ var google = {
 
 <script>
 // ══ GLOBALS ══
-var ROLES_SEE_ALL=['admin','sm','svv','sv','wla','qtc'],ROLES_OWN=['qtc'],ROLES_MANAGE_USERS=['admin','sm','svv','sv','qtc'],ROLES_VIEW_DATA=['admin','sm','svv','sv','qtc','wla'],ROLES_SET_TARGET=['admin','sm','svv','qtc'];
+var ROLES_SEE_ALL=['admin','sm','ssv','sv','wla'],ROLES_OWN=['qtc'],ROLES_MANAGE_USERS=['admin','sm','ssv','sv'],ROLES_VIEW_DATA=['admin','sm','ssv','sv','qtc','wla'],ROLES_SET_TARGET=['admin','sm','ssv'];
 var F={labeler:'labeler_name',shift:'shift',unit:'unit',modality:'modality',pass:'pass',queue:'queue_name',objects:'object_count',date:'created_at',qc:'qtc_name',ubkey:'yubikey_email',link:'task_link',stage:'stage',pc:'pc_no'};
 var MOD_COLORS={all:{bg:'var(--blue)',border:'var(--blue)'},lane:{bg:'var(--green)',border:'var(--green)'},lidar:{bg:'var(--teal)',border:'var(--teal)'},lane_fp:{bg:'#2d5fa8',border:'#2d5fa8'},lane_qa:{bg:'var(--orange)',border:'var(--orange)'},lidar_fp:{bg:'#007b83',border:'#007b83'},lidar_qa:{bg:'var(--purple)',border:'var(--purple)'}};
 var SESSION=null,TOKEN=null;
@@ -1099,7 +1139,7 @@ function doLogin() {
             } else {
                if (res.pending) {
   gid('loginScreen').style.display = 'none';
-  gid('waitingScreen').style.cssText = 'display:block;position:fixed;inset:0;z-index:9999;';
+  gid('waitingScreen').style.cssText = 'display:flex;position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#0d2b6b 0%,#1c4587 50%,#2d5fa8 100%);align-items:center;justify-content:center;';
 } else {
   showLoginErr(res.msg || 'Invalid credentials');
 }
@@ -1147,7 +1187,7 @@ function doLogout() {
 
 function showDash(){// Add User بيظهر للـ Admin بس
 var addBtn = gid('btnAddUser');
-if (addBtn) addBtn.style.display = hasRole(SESSION.role, ['admin','qtc']) ? 'flex' : 'none';
+if (addBtn) addBtn.style.display = hasRole(SESSION.role, ['admin','sm','ssv','sv']) ? 'flex' : 'none';
   hide('loginScreen');gid('dashScreen').style.display='block';
   gid('sbName').textContent=titleCase(SESSION.name);
   gid('sbEmail').textContent=SESSION.email||'';
@@ -1156,15 +1196,12 @@ if (addBtn) addBtn.style.display = hasRole(SESSION.role, ['admin','qtc']) ? 'fle
   var rb=gid('sbRole');rb.textContent=SESSION.role.toUpperCase();rb.className='role-badge rb-'+SESSION.role;
       rb.textContent = SESSION.role.toUpperCase();
       rb.className = 'role-badge rb-' + SESSION.role;
- if(hasRole(SESSION.role,['admin','sm','svv','sv','qtc'])){
+ if(hasRole(SESSION.role,['admin','sm','ssv','sv'])){
   var navUsers = gid('nav-users');
   if(navUsers) navUsers.style.display = '';
 }
-if(hasRole(SESSION.role,['admin','qtc'])){
-  document.querySelectorAll('.admin-only').forEach(function(el){el.style.display='';});
-}
   if(!hasRole(SESSION.role,ROLES_VIEW_DATA)){var nd=gid('nav-data');if(nd)nd.style.display='none';}
-  if(userSeeOwnOnly()){gid('shiftBannerHomeText').textContent=SESSION.shift;gid('shiftBannerDataText').textContent=SESSION.shift;gid('shiftBannerHome').style.display='flex';gid('shiftBannerData').style.display='flex';}
+  if(userSeeOwnOnly()){gid('shiftBannerHomeText').textContent=SESSION.shift;gid('shiftBannerData').style.display='flex';}
   
   // Show global filter initially
   var gf = gid('globalFilterBar');
@@ -1431,22 +1468,45 @@ function initStatsListener(){
   });
 }
 
-function buildShifts(data){
-  var shifts={};
-  data.forEach(function(r){
-    var mod=(r[F.modality]||'').toLowerCase(),pass=(r[F.pass]||'').toUpperCase();
-    var sh=nShift(r[F.shift]||'Unknown'),un=(r[F.unit]||'Unknown').trim();
-    var isL=mod.indexOf('lane')!==-1,isLi=mod.indexOf('lidar')!==-1,isFP=pass==='FP',isQA=pass==='QA';
-    function ensure(m,k){if(!m[k])m[k]={lane:{fp:0,qa:0,total:0},lidar:{fp:0,qa:0,total:0},total:0,units:{}};}
-    function ensureU(m,k){if(!m[k])m[k]={lane:{fp:0,qa:0,total:0},lidar:{fp:0,qa:0,total:0},total:0};}
-    function bump(o){o.total++;if(isFP)o.fp++;if(isQA)o.qa++;}
-    ensure(shifts,sh);shifts[sh].total++;if(isL)bump(shifts[sh].lane);if(isLi)bump(shifts[sh].lidar);
-    ensureU(shifts[sh].units,un);shifts[sh].units[un].total++;if(isL)bump(shifts[sh].units[un].lane);if(isLi)bump(shifts[sh].units[un].lidar);
+// ══ BUILD SHIFTS FUNCTION ══
+// ══ BUILD SHIFTS FUNCTION ══
+function buildShifts(rows) {
+  var shifts = {};
+  var SH_ORD = ['Morning', 'Night', 'Over Night', 'Over Shift'];
+  
+  SH_ORD.forEach(function(sh) { shifts[sh] = { total:0, lfp:0, lqa:0, lifp:0, liqa:0, units:{} }; });
+  
+  rows.forEach(function(r) {
+    var sh = nShift(r[F.shift] || 'Unknown');
+    var un = (r[F.unit] || 'Unknown').trim();
+    var mod = (r[F.modality] || '').toLowerCase();
+    var pas = (r[F.pass] || '').toUpperCase();
+    var isL = mod.indexOf('lane') !== -1;
+    var isLi = mod.indexOf('lidar') !== -1;
+    
+    if (!shifts[sh]) shifts[sh] = { total:0, lfp:0, lqa:0, lifp:0, liqa:0, units:{} };
+    if (!shifts[sh].units[un]) shifts[sh].units[un] = { total:0, lfp:0, lqa:0, lifp:0, liqa:0 };
+    
+    shifts[sh].total++;
+    shifts[sh].units[un].total++;
+    
+    if (isL && pas === 'FP') { shifts[sh].lfp++; shifts[sh].units[un].lfp++; }
+    if (isL && pas === 'QA') { shifts[sh].lqa++; shifts[sh].units[un].lqa++; }
+    if (isLi && pas === 'FP') { shifts[sh].lifp++; shifts[sh].units[un].lifp++; }
+    if (isLi && pas === 'QA') { shifts[sh].liqa++; shifts[sh].units[un].liqa++; }
   });
+  
   return shifts;
 }
 
-function getDrillVal(d,dtype){if(dtype==='total')return d.total;if(dtype==='lane_fp')return d.lane.fp;if(dtype==='lane_qa')return d.lane.qa;if(dtype==='lidar_fp')return d.lidar.fp;if(dtype==='lidar_qa')return d.lidar.qa;return 0;}
+function getDrillVal(d,dtype){
+  if(dtype==='total')return d.total||0;
+  if(dtype==='lane_fp')return d.lfp||0;
+  if(dtype==='lane_qa')return d.lqa||0;
+  if(dtype==='lidar_fp')return d.lifp||0;
+  if(dtype==='lidar_qa')return d.liqa||0;
+  return 0;
+}
 
 function renderDrill(shifts){
   var MAIN=['Morning','Night','Over Night'],ROOM_ORD=['NC Room 102','NC Room 106','NC Room 108','4th Floor','2nd Floor'];
@@ -1465,7 +1525,11 @@ function renderDrill(shifts){
     su.forEach(function(un){
       var ud=sd.units[un],val=getDrillVal(ud,dtype);if(!val)return;
       var st='';
-      if(dtype==='total')st='<span class="drill-stat ds-lfp">LFP: '+ud.lane.fp+'</span><span class="drill-stat ds-lqa">LQA: '+ud.lane.qa+'</span><span class="drill-stat ds-lifp">LiFP: '+ud.lidar.fp+'</span><span class="drill-stat ds-liqa">LiQA: '+ud.lidar.qa+'</span><span class="drill-stat ds-tot">'+val+'</span>';
+      if(dtype==='total')st='<span class="drill-stat ds-lfp">LFP: '+ud.lfp+'</span><span class="drill-stat ds-lqa">LQA: '+ud.lqa+'</span><span class="drill-stat ds-lifp">LiFP: '+ud.lifp+'</span><span class="drill-stat ds-liqa">LiQA: '+ud.liqa+'</span><span class="drill-stat ds-tot">'+val+'</span>';
+else if(dtype==='lane_fp')st='<span class="drill-stat ds-lfp">'+val+'</span>';
+else if(dtype==='lane_qa')st='<span class="drill-stat ds-lqa">'+val+'</span>';
+else if(dtype==='lidar_fp')st='<span class="drill-stat ds-lifp">'+val+'</span>';
+else if(dtype==='lidar_qa')st='<span class="drill-stat ds-liqa">'+val+'</span>';
       else if(dtype==='lane_fp')st='<span class="drill-stat ds-lfp">'+val+'</span>';
       else if(dtype==='lane_qa')st='<span class="drill-stat ds-lqa">'+val+'</span>';
       else if(dtype==='lidar_fp')st='<span class="drill-stat ds-lifp">'+val+'</span>';
@@ -1709,13 +1773,14 @@ function renderLabelersPage(data){
       var un=(r[F.unit]||'').trim(),pc=(r[F.pc]||'').toString().trim();
       var isL=mod.indexOf('lane')!==-1,isLi=mod.indexOf('lidar')!==-1,isFP=pass==='FP',isQA=pass==='QA';
       function bump(o){o.total++;if(isFP)o.fp++;if(isQA)o.qa++;}
-      if(!labelers[lb])labelers[lb]={total:0,lane:{fp:0,qa:0,total:0},lidar:{fp:0,qa:0,total:0},shifts:{},units:{},pcs:{}};
-      if(!labelers[lb].shifts[sh])labelers[lb].shifts[sh]={total:0,lane:{fp:0,qa:0,total:0},lidar:{fp:0,qa:0,total:0}};
-      labelers[lb].total++;labelers[lb].shifts[sh].total++;
-      if(un)labelers[lb].units[un]=(labelers[lb].units[un]||0)+1;
-      if(pc&&pc!=='-')labelers[lb].pcs[pc]=(labelers[lb].pcs[pc]||0)+1;
-      if(isL){bump(labelers[lb].lane);bump(labelers[lb].shifts[sh].lane);}
-      if(isLi){bump(labelers[lb].lidar);bump(labelers[lb].shifts[sh].lidar);}
+      var labKey = lb + '||' + pc;
+if(!labelers[labKey])labelers[labKey]={total:0,lane:{fp:0,qa:0,total:0},lidar:{fp:0,qa:0,total:0},shifts:{},units:{},pcs:{},_name:lb,_pc:pc};
+if(!labelers[labKey].shifts[sh])labelers[labKey].shifts[sh]={total:0,lane:{fp:0,qa:0,total:0},lidar:{fp:0,qa:0,total:0}};
+labelers[labKey].total++;labelers[labKey].shifts[sh].total++;
+if(un)labelers[labKey].units[un]=(labelers[labKey].units[un]||0)+1;
+if(pc&&pc!=='-')labelers[labKey].pcs[pc]=(labelers[labKey].pcs[pc]||0)+1;
+if(isL){bump(labelers[labKey].lane);bump(labelers[labKey].shifts[sh].lane);}
+if(isLi){bump(labelers[labKey].lidar);bump(labelers[labKey].shifts[sh].lidar);}
     });
     return labelers;
   }
@@ -1728,8 +1793,7 @@ function renderLabelersPage(data){
       // Determine dominant shift
       var domShift='';var maxS=0;
       Object.keys(lb.shifts).forEach(function(s){if(lb.shifts[s].total>maxS){maxS=lb.shifts[s].total;domShift=s;}});
-      return{name:k,total:lb.total,lfp:lb.lane.fp,lqa:lb.lane.qa,lifp:lb.lidar.fp,liqa:lb.lidar.qa,
-             laneTotal:lb.lane.fp+lb.lane.qa,lidarTotal:lb.lidar.fp+lb.lidar.qa,unit:topUnit,pc:topPc,shift:domShift};
+      return{name:lb._name||k,total:lb.total,lfp:lb.lane.fp,lqa:lb.lane.qa,lifp:lb.lidar.fp,liqa:lb.lidar.qa,laneTotal:lb.lane.fp+lb.lane.qa,lidarTotal:lb.lidar.fp+lb.lidar.qa,unit:topUnit,pc:lb._pc||topPc,shift:domShift};
     }).filter(function(lb){return lb.total>0;});
   }
 
@@ -1751,7 +1815,7 @@ function renderLabelersPage(data){
     var topPc=Object.keys(initLabs[best].pcs).sort(function(a,b){return initLabs[best].pcs[b]-initLabs[best].pcs[a];})[0]||'';
     bestHtml+='<div class="lab-mini-card" style="background:'+sc.bg+';border:1.5px solid '+sc.border+';border-radius:10px;padding:12px;cursor:pointer;overflow:hidden">'
       +'<div style="font-size:9px;font-weight:800;color:'+sc.color+';text-transform:uppercase;letter-spacing:.4px">🏆 '+sh+'</div>'
-      +'<div style="font-size:13px;font-weight:800;color:var(--dark);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+best+'</div>'
+      +'<div style="font-size:13px;font-weight:800;color:var(--dark);margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">'+(initLabs[best]._name||best.split('||')[0])+'</div>'
       +'<div class="lab-mini-card-stats">'
       +'<div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:5px">'
       +'<span style="font-size:10px;font-weight:700;background:rgba(255,255,255,.7);padding:1px 6px;border-radius:5px;color:#1e8e3e">LFP: '+bd.lane.fp+'</span>'
@@ -1805,7 +1869,7 @@ function renderLabelersPage(data){
         var sd=initLabs[k].shifts[sh];
         var topUnit=Object.keys(initLabs[k].units).sort(function(a,b){return initLabs[k].units[b]-initLabs[k].units[a];})[0]||'';
         var topPc=Object.keys(initLabs[k].pcs).sort(function(a,b){return initLabs[k].pcs[b]-initLabs[k].pcs[a];})[0]||'';
-        return{name:k,total:sd.total,lfp:sd.lane.fp,lqa:sd.lane.qa,lifp:sd.lidar.fp,liqa:sd.lidar.qa,laneTotal:sd.lane.fp+sd.lane.qa,lidarTotal:sd.lidar.fp+sd.lidar.qa,unit:topUnit,pc:topPc,shift:sh};
+        return{name:(initLabs? initLabs[k]._name : labelers[k]._name) || k.split('||')[0], total:sd.total, lfp:sd.lane.fp, lqa:sd.lane.qa, lifp:sd.lidar.fp, liqa:sd.lidar.qa, laneTotal:sd.lane.fp+sd.lane.qa, lidarTotal:sd.lidar.fp+sd.lidar.qa, unit:topUnit, pc:topPc, shift:sh};
       });
     }
     html+='<div class="lab-tab-content" data-labtabcontent="'+sh+'" data-labs="'+encodeURIComponent(JSON.stringify(shLabs))+'" style="display:'+(isF?'block':'none')+'"><div class="lab-list-wrap"></div></div>';
@@ -1830,7 +1894,7 @@ function renderLabelersPage(data){
         var sd=labelers[k].shifts[sh];
         var topUnit=Object.keys(labelers[k].units).sort(function(a,b){return labelers[k].units[b]-labelers[k].units[a];})[0]||'';
         var topPc=Object.keys(labelers[k].pcs).sort(function(a,b){return labelers[k].pcs[b]-labelers[k].pcs[a];})[0]||'';
-        return{name:k,total:sd.total,lfp:sd.lane.fp,lqa:sd.lane.qa,lifp:sd.lidar.fp,liqa:sd.lidar.qa,laneTotal:sd.lane.fp+sd.lane.qa,lidarTotal:sd.lidar.fp+sd.lidar.qa,unit:topUnit,pc:topPc,shift:sh};
+        return{name:(initLabs? initLabs[k]._name : labelers[k]._name) || k.split('||')[0], total:sd.total, lfp:sd.lane.fp, lqa:sd.lane.qa, lifp:sd.lidar.fp, liqa:sd.lidar.qa, laneTotal:sd.lane.fp+sd.lane.qa, lidarTotal:sd.lidar.fp+sd.lidar.qa, unit:topUnit, pc:topPc, shift:sh};
       });}
       h+='<div class="lab-tab-content" data-labtabcontent="'+sh+'" data-labs="'+encodeURIComponent(JSON.stringify(shLabs))+'" style="display:'+(isF?'block':'none')+'"><div class="lab-list-wrap"></div></div>';
     });
@@ -1850,7 +1914,9 @@ function renderLabelersPage(data){
     var sorted=allLabs.slice().sort(function(a,b){return(b[sortKey]||0)-(a[sortKey]||0);});
     var maxV=sorted.length?Math.max(sorted[0][sortKey]||0,1):1;
     var allSubs=['lfp','lqa','lifp','liqa'],subCols=allSubs.filter(function(k){return sorted.some(function(lb){return(lb[k]||0)>0;});});
-    var subHdrs={lfp:'Lane-FP',lqa:'Lane-QA',lifp:'Lidar-FP',liqa:'Lidar-QA'},subClrs={lfp:'#1e8e3e',lqa:'#e37400',lifp:'#007b83',liqa:'#7b1fa2'};
+    var isMob=window.innerWidth<=768;
+    var subHdrs={lfp:isMob?'LFP':'Lane-FP',lqa:isMob?'LQA':'Lane-QA',lifp:isMob?'LiFP':'Lidar-FP',liqa:isMob?'LiQA':'Lidar-QA'};
+    var subClrs={lfp:'#1e8e3e',lqa:'#e37400',lifp:'#007b83',liqa:'#7b1fa2'};
     var colW=subCols.length===1?'90px':subCols.length===2?'repeat(2,80px)':subCols.length===3?'repeat(3,70px)':'repeat(4,65px)';
     var gridCols='26px 1fr '+colW+' 70px';
     function cell(val,key){var isSort=key===sortKey;return'<span style="font-size:12px;font-weight:'+(isSort?'800':'700')+';color:'+(sortColors[key]||'var(--dark)')+';background:'+(isSort?sortBg[key]:'transparent')+';border-radius:6px;padding:2px 4px;'+(isSort?'outline:1.5px solid '+(sortColors[key]||'var(--blue)')+';':'')+' ">'+val+'</span>';}
@@ -2229,7 +2295,7 @@ function _buildAttCard(sh,sd,dateISO,isDetails){
   +'<div onclick="(function(el){var b=el.nextElementSibling;b.style.display=b.style.display===\'none\'?\'block\':\'none\';})(this)" '
   +'style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;cursor:pointer">'
   +'<div style="display:flex;align-items:center;gap:10px">'
-  +'<span style="font-size:13px;font-weight:800;color:#f57f17">🔄 Buffer</span>'
+  +'<span style="font-size:13px;font-weight:800;color:#f57f17"> Buffer</span>'
   +'<span style="background:#1e8e3e;color:white;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px">P: '+sd.bufferStats.present.length+'</span>'
   +(sd.bufferStats.absent.length > 0 ? '<span style="background:#c5221f;color:white;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px">A: '+sd.bufferStats.absent.length+'</span>' : '')
   +'<span style="background:#f57f17;color:white;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px">Total: '+sd.bufferStats.total+'</span>'
@@ -2432,7 +2498,7 @@ var rowBorder = isAbsent ? 'rgba(197,34,31,.25)'
           +'data-yubikey="'+safeYubi+'" '
           +'data-status="'+statusLabel+'" '
           +'data-statusbg="'+statusBg+'" '
-          +'style="background:'+rowBg+';border:1px solid '+rowBorder+';border-radius:8px;padding:9px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:background .12s"'
+          +'class="att-person-row-item" style="background:'+rowBg+';border:1px solid '+rowBorder+';border-radius:8px;padding:9px 12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:background .12s"'
      +'onmouseover="this.style.background=document.body.classList.contains(\'dark\')?\'#1a2040\':\'var(--blue-bg)\'"'
 +'onmouseout="this.style.background=document.body.classList.contains(\'dark\')?\''+darkRowBg+'\':\''+rowBg+'\'">';
         if(p.pc)html+='<span style="font-size:10px;font-weight:700;background:white;color:var(--blue);padding:2px 7px;border-radius:5px;border:1px solid var(--blue-lt);flex-shrink:0">'+p.pc+'</span>';
@@ -2643,7 +2709,7 @@ function openOtModal(r) {
 }
 // ══ USERS ══
 function loadUsers() {
-  if (!SESSION || !hasRole(SESSION.role, ['admin','sm','svv','sv','qtc'])) return;
+  if (!SESSION || !hasRole(SESSION.role, ['admin','sm','ssv','sv'])) return;
   shtml('usersArea','<div class="loading"><div class="spin"></div> Loading...</div>');
   google.script.run
     .withSuccessHandler(function(r) {
@@ -2657,7 +2723,7 @@ function loadUsers() {
 }
 
 function renderUsers(users, pending) {
-  var ROLE_ORD = ['admin','sm','svv','sv','qt','qtc','wla','qtc'];
+  var ROLE_ORD = ['admin','sm','ssv','sv','qt','qtc','wla'];
   var sorted = users.slice().sort(function(a,b) {
     var ai = ROLE_ORD.indexOf(a.role), bi = ROLE_ORD.indexOf(b.role);
     return ai !== bi ? ai - bi : (a.name||'').localeCompare(b.name||'');
@@ -2677,7 +2743,7 @@ function renderUsers(users, pending) {
 'style="border-bottom:2px solid var(--blue);color:var(--blue);margin-bottom:-2px">Pending'+pendingBadge+'</div>' +
     '</div>' +
 
-    '<div id="uPanelActive" style="display:'+(hasRole(SESSION.role,['admin','sm','qtc'])?'block':'none')+'">' +
+    '<div id="uPanelActive" style="display:'+(hasRole(SESSION.role,['admin','sm'])?'block':'none')+'">' +
     '<div class="tbl-card"><table><thead><tr>' +
     '<th class="left">Name</th><th class="left">Email</th>' +
     '<th>Role</th><th>Shift</th><th>Status</th><th>Actions</th>' +
@@ -2901,9 +2967,6 @@ window.onload=function(){
   window.addEventListener('resize',function(){if(!_isMobile()){_sidebar.classList.remove('open');_overlay.classList.remove('show');}});
 
   document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeModal();closeDetail();closeChangePwd();}});
-
-  // Auto refresh
-  setInterval(function(){if(SESSION&&TOKEN&&gid('pgHome').style.display!=='none')loadStats();},120000);
 };
 </script>
 <script>
@@ -2926,8 +2989,8 @@ function doRegister() {
 
   gid('regErr').style.display = 'none';
 
-  if (!name || name.split(' ').filter(Boolean).length < 2)
-    return showRegErr('Please enter your full name In English (two words)');
+  if (!name)
+    return showRegErr('Please enter your full name');
 if (!/^[a-zA-Z\s]+$/.test(name))
     return showRegErr('Full name must be in English only');
 // ✅ أضف السطرين دول هنا
@@ -2977,7 +3040,7 @@ function openApproveModal(rowId, encodedName) {
     '<select id="apRole" class="sel-inp">' +
     '<option value="qtc">QTC</option>' +
     '<option value="sv">SV</option>' +
-    '<option value="svv">SVV</option>' +
+    '<option value="ssv">SSV</option>' +
     '<option value="sm">SM</option>' +
     '<option value="wla">WLA</option>' +
     '<option value="qt">QT</option>' +
@@ -3068,7 +3131,7 @@ renderDetailsOfData = function () {
 
   var UNIT_ORD = ['NC Room 102', 'NC Room 106', 'NC Room 108', '4th Floor', '2nd Floor'];
   var SH_ORD   = ['Morning', 'Night', 'Over Night', 'Over Shift'];
-  var SH_ICON  = { Morning: '☀️', Night: '🌙', 'Over Night': '🦉', 'Over Shift': '🔄' };
+  var SH_ICON  = { Morning: '', Night: '', 'Over Night': '', 'Over Shift': '' };
 
   // ── بناء الهيكل الأساسي (نفس الأصلي) ──
   var shifts = {};
@@ -3096,10 +3159,11 @@ renderDetailsOfData = function () {
     if (!shifts[sh].units) shifts[sh].units = {};
     ensure(shifts[sh].units, un); bump(shifts[sh].units[un]);
     if (!shifts[sh].units[un].labelers) shifts[sh].units[un].labelers = {};
-    ensure(shifts[sh].units[un].labelers, lb, { pc: pc, ub: ub });
-    bump(shifts[sh].units[un].labelers[lb]);
-    if (!shifts[sh].units[un].labelers[lb].pc && pc)              shifts[sh].units[un].labelers[lb].pc = pc;
-    if (!shifts[sh].units[un].labelers[lb].ub && ub && ub!=='-') shifts[sh].units[un].labelers[lb].ub = ub;
+    var labKey = lb+'||'+(pc||'');
+    ensure(shifts[sh].units[un].labelers, labKey, { pc: pc, ub: ub, _name: lb });
+    bump(shifts[sh].units[un].labelers[labKey]);
+    if (!shifts[sh].units[un].labelers[labKey].pc && pc)              shifts[sh].units[un].labelers[labKey].pc = pc;
+    if (!shifts[sh].units[un].labelers[labKey].ub && ub && ub!=='-') shifts[sh].units[un].labelers[labKey].ub = ub;
   });
 
   // ── جمع كل الـ yubikeys اللي سبمتت فعلاً ──
@@ -3176,14 +3240,34 @@ var html =
 window.forceSyncAttendance = function(btn) {
   btn.style.opacity = "0.7";
   btn.style.transform = "scale(0.95)";
-  btn.innerHTML = "⏳ جارٍ المزامنة الآن...";
-  
-  navTo('attdetails'); // روح للأتيند
-  
-  setTimeout(function() {
-    navTo('detailsofdata'); // ارجع للداتا
-    toast('تمت مزامنة البيانات وتحديث القائمة ✅', 'ok');
-  }, 500); 
+  btn.innerHTML = "⏳ جارٍ المزامنة...";
+
+  // روح لصفحة الأتيند
+  navTo('attdetails');
+
+  // انتظر لحد ما الـ cache يتملى (polling كل 300ms, max 10 ثواني)
+  var attempts = 0;
+  var maxAttempts = 33; // 33 × 300ms ≈ 10 ثواني
+
+  var checker = setInterval(function() {
+    attempts++;
+
+    // لو البيانات اتحملت
+    if (_attShift2Cache) {
+      clearInterval(checker);
+      // ارجع لصفحة الداتا
+      navTo('detailsofdata');
+      toast('تمت مزامنة البيانات ✅', 'ok');
+      return;
+    }
+
+    // لو وصلنا للـ max بدون نتيجة
+    if (attempts >= maxAttempts) {
+      clearInterval(checker);
+      navTo('detailsofdata');
+      toast('تم الرجوع (انتهت المهلة)', 'ok');
+    }
+  }, 300);
 };
   // ── Shifts ──
   var shiftKeys = SH_ORD.filter(function (s) { return !!shifts[s]; });
@@ -3312,7 +3396,7 @@ window.forceSyncAttendance = function(btn) {
           '<span style="display:inline-flex;width:22px;height:22px;border-radius:50%;background:' +
           (isTopAny ? '#f9ab00' : 'var(--blue)') + ';color:white;font-size:11px;font-weight:800;align-items:center;justify-content:center">' + (idx+1) + '</span>' +
           '</td>' +
-          '<td style="padding:8px 12px;font-size:13px;font-weight:700;color:var(--dark)">' + (isTopAny ? '<span style="font-size:12px;margin-right:4px">👑</span>' : '') + n + '</td>' +
+          '<td style="padding:8px 12px;font-size:13px;font-weight:700;color:var(--dark)">' + (isTopAny ? '<span style="font-size:12px;margin-right:4px">👑</span>' : '') + (ud.labelers[n]._name||n.split('||')[0]) + '</td>' +
           '<td style="padding:8px 12px;text-align:center;font-size:13px;font-weight:800;color:var(--blue)">'  + (d.pc || '-') + '</td>' +
           '<td style="padding:8px 12px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--gray)">' + (d.ub && d.ub !== '-' ? d.ub : '-') + '</td>' +
           colCell('lfp', '#1e8e3e') + colCell('lqa', '#e37400') +
@@ -3450,7 +3534,7 @@ function renderOtDetails(data) {
   // تجميع البيانات وتصنيفها حسب الشفت
   var shifts = {};
   var SH_ORD = ['Morning', 'Night', 'Over Night', 'Over Shift'];
-  var SH_ICON = { 'Morning': '☀️', 'Night': '🌙', 'Over Night': '🦉', 'Over Shift': '🔄' };
+  var SH_ICON = { 'Morning': '', 'Night': '', 'Over Night': '', 'Over Shift': '' };
   
   data.forEach(function(r) {
     var sh = titleCase((r.otShift || 'Unknown').trim());
@@ -3690,24 +3774,44 @@ hasRole = function(role, roleArray) {
   return _origHasRole(role, roleArray);
 };
 // ═══════════════════════════════════════════════════════════
-// METI DASHBOARD — ROLE PERMISSIONS PATCH
+// METI DASHBOARD — ROLE PERMISSIONS PATCH v2
+// الصلاحيات الجديدة:
+// Home         → الجميع (Weekly Target + كل الشيفتات → SV,SSV,SM,WLA,Admin,QT فقط)
+// Data/Details → الجميع (كل الشيفتات → SV,SSV,SM,WLA,Admin,QT فقط)
+// Top Labelers → الجميع (كل الشيفتات → SV,SSV,SM,WLA,Admin,QT فقط)
+// Top QTC      → الجميع بدون قيود
+// QTC Stats    → الجميع
+// Attendance   → SV,SSV,SM,WLA,Admin فقط (مخفية للباقين)
+// Att Details  → الجميع (كل الشيفتات → SV,SSV,SM,Admin فقط)
+// OT Details   → الجميع (كل الشيفتات → SV,SSV,SM,Admin فقط)
+// Users        → SV,SSV,SM,Admin فقط
 // ═══════════════════════════════════════════════════════════
 
 // ══ 1. ROLE ARRAYS ══
-ROLES_SEE_ALL      = ['admin','sm','svv','sv','wla','qtc'];
-ROLES_OWN          = [,'sl'];           // شايف شيفته بس
-ROLES_VIEW_DATA    = ['admin','sm','svv','sv','qtc','wla','sl','qtc'];
-ROLES_MANAGE_USERS = ['admin','sm','svv','sv','qtc'];
-ROLES_SET_TARGET   = ['admin','sm','svv','qtc'];
-var ROLES_ATT_ALL          = ['admin','sm','svv','sv','wla','qtc'];   // Attendance: شايف الكل
-var ROLES_ATT_DETAILS_ALL  = ['admin','sm','svv','qtc'];              // Details of Att: شايف الكل
-var ROLES_OT_ACCESS        = ['admin','sm','svv','sv','qtc'];         // OT page
-var ROLES_APPROVE_USERS    = ['admin','sm','svv','sv','qtc'];         
+ROLES_SEE_ALL         = ['admin','sm','ssv','sv','wla'];
+ROLES_OWN             = ['qtc','sl','qt'];
+ROLES_VIEW_DATA       = ['admin','sm','ssv','sv','qtc','wla','sl','qt'];
+ROLES_MANAGE_USERS    = ['admin','sm','ssv','sv'];
+ROLES_SET_TARGET      = ['admin','sm','ssv'];
 
-// ══ 2. CSS — SL badge ══
+// من يرى كل الشيفتات في صفحات البيانات والـ Labelers
+var ROLES_SEE_ALL_SHIFTS  = ['admin','sm','ssv','sv','wla','qt'];
+// من يرى صفحة Attendance (تختفي تماماً للباقين)
+var ROLES_ATT_VIEW        = ['admin','sm','ssv','sv','wla'];
+// من يرى كل شيفتات Att Details / OT
+var ROLES_ATT_DETAILS_ALL = ['admin','sm','ssv','sv'];
+var ROLES_OT_ALL          = ['admin','sm','ssv','sv'];
+// صلاحية Users
+var ROLES_APPROVE_USERS   = ['admin','sm','ssv','sv'];
+
+// ══ 2. CSS — SL / QT badges ══
 (function(){
   var st = document.createElement('style');
-  st.textContent = '.rb-sl{background:#ff7043;color:#fff} .b-sl{background:#fbe9e7;color:#bf360c}';
+  st.textContent =
+    '.rb-sl{background:#ff7043;color:#fff}' +
+    '.b-sl{background:#fbe9e7;color:#bf360c}' +
+    '.rb-qt{background:#0288d1;color:#fff}' +
+    '.b-qt{background:#e1f5fe;color:#01579b}';
   document.head.appendChild(st);
 })();
 
@@ -3718,101 +3822,198 @@ showDash = function(){
 
   var role = SESSION && SESSION.role;
 
-  // SL badge style
+  // -- Role badge fix for SL / QT --
   var rb = gid('sbRole');
-  if(rb && role === 'sl'){ rb.textContent = 'SL'; rb.className = 'role-badge rb-sl'; }
-
-  // إضافة SL في modal select لو مش موجود
-  var mRoleEl = gid('mRole');
-  if(mRoleEl && !mRoleEl.querySelector('option[value="sl"]')){
-    var opt = document.createElement('option');
-    opt.value = 'sl'; opt.textContent = 'SL';
-    mRoleEl.insertBefore(opt, mRoleEl.querySelector('option[value="qtc"]'));
+  if(rb){
+    if(role === 'sl'){ rb.textContent = 'SL'; rb.className = 'role-badge rb-sl'; }
+    if(role === 'qt'){ rb.textContent = 'QT'; rb.className = 'role-badge rb-qt'; }
   }
 
-  // ── Attendance: ظاهر للكل ──
-  var navAtt = gid('nav-attendance');
-  if(navAtt) navAtt.style.display = '';
+  // -- إضافة SL & QT في modal select لو مش موجودين --
+  var mRoleEl = gid('mRole');
+  if(mRoleEl){
+    ['sl','qt'].forEach(function(r){
+      if(!mRoleEl.querySelector('option[value="'+r+'"]')){
+        var opt = document.createElement('option');
+        opt.value = r;
+        opt.textContent = r.toUpperCase();
+        var qtcOpt = mRoleEl.querySelector('option[value="qtc"]');
+        if(qtcOpt) mRoleEl.insertBefore(opt, qtcOpt);
+        else mRoleEl.appendChild(opt);
+      }
+    });
+  }
 
-  // ── Details of Attendance: ظاهر للكل ──
-  var navAttD = gid('nav-attdetails');
-  if(navAttD) navAttD.style.display = '';
+  // ─────────────────────────────────────────────
+  // Sidebar nav visibility
+  // ─────────────────────────────────────────────
 
-  // ── Details of OT: SV, SSV, SM فقط ──
-  var navOt = gid('nav-otdetails');
-  if(navOt) navOt.style.display = hasRole(role, ROLES_OT_ACCESS) ? '' : 'none';
+  // Home → الجميع
+  var navHome = gid('nav-home');
+  if(navHome) navHome.style.display = '';
 
-  // ── Users: SV, SSV, SM فقط ──
-  var navU = gid('nav-users');
-  if(navU) navU.style.display = hasRole(role, ROLES_MANAGE_USERS) ? '' : 'none';
+  // Data → من في ROLES_VIEW_DATA
+  var navData = gid('nav-data');
+  if(navData) navData.style.display = hasRole(role, ROLES_VIEW_DATA) ? '' : 'none';
 
-  // ── Data: إخفاء لو مش في ROLES_VIEW_DATA ──
-  var navD = gid('nav-data');
-  if(navD) navD.style.display = hasRole(role, ROLES_VIEW_DATA) ? '' : 'none';
+  // Details of Data → نفس Data
   var navDod = gid('nav-detailsofdata');
   if(navDod) navDod.style.display = hasRole(role, ROLES_VIEW_DATA) ? '' : 'none';
 
-  // ── Admin section label ──
-  document.querySelectorAll('.admin-only').forEach(function(el){ el.style.display = ''; });
+  // Top Labelers → الجميع
+  var navLab = gid('nav-labelers');
+  if(navLab) navLab.style.display = '';
 
-  // ── Shift banners ──
-  if(hasRole(role, ROLES_OWN) && SESSION.shift){
+  // Top QTC → الجميع
+  var navQtc = gid('nav-qtc');
+  if(navQtc) navQtc.style.display = '';
+
+  // QTC Stats → الجميع
+  var navQtcS = gid('nav-qtcstats');
+  if(navQtcS) navQtcS.style.display = '';
+
+  // Attendance → ROLES_ATT_VIEW فقط (تختفي للباقين)
+  var navAtt = gid('nav-attendance');
+  if(navAtt) navAtt.style.display = hasRole(role, ROLES_ATT_VIEW) ? '' : 'none';
+
+  // Details of Attendance → الجميع (الفلترة بتتحكم في المحتوى)
+  var navAttD = gid('nav-attdetails');
+  if(navAttD) navAttD.style.display = '';
+
+  // Details of OT → الجميع (الفلترة بتتحكم في المحتوى)
+  var navOt = gid('nav-otdetails');
+  if(navOt) navOt.style.display = '';
+
+  // Users → ROLES_MANAGE_USERS فقط
+  var navU = gid('nav-users');
+  if(navU) navU.style.display = hasRole(role, ROLES_MANAGE_USERS) ? '' : 'none';
+
+  // Admin section label → ظاهر لكل من عنده صلاحية admin pages
+  document.querySelectorAll('.admin-only').forEach(function(el){
+    el.style.display = hasRole(role, ['admin','sm','ssv','sv','wla']) ? '' : 'none';
+  });
+
+  // ─────────────────────────────────────────────
+  // Bottom Nav visibility
+  // ─────────────────────────────────────────────
+  var bnHome = gid('bn-home');     if(bnHome) bnHome.style.display = '';
+  var bnData = gid('bn-data');     if(bnData) bnData.style.display = hasRole(role, ROLES_VIEW_DATA) ? '' : 'none';
+  var bnLab  = gid('bn-labelers'); if(bnLab)  bnLab.style.display  = '';
+  var bnQtc  = gid('bn-qtc');      if(bnQtc)  bnQtc.style.display  = '';
+  // bn-menu (hamburger) → دايماً ظاهر
+  var bnMenu = gid('bn-menu');     if(bnMenu) bnMenu.style.display  = '';
+
+  // ─────────────────────────────────────────────
+  // Shift banner
+  // ─────────────────────────────────────────────
+  if(!hasRole(role, ROLES_SEE_ALL_SHIFTS) && SESSION && SESSION.shift){
     var sb1 = gid('shiftBannerHome');
     if(sb1){ gid('shiftBannerHomeText').textContent = SESSION.shift; sb1.style.display = 'flex'; }
   }
+
+  // ─────────────────────────────────────────────
+  // Add User button
+  // ─────────────────────────────────────────────
+  var addBtn = gid('btnAddUser');
+  if(addBtn) addBtn.style.display = hasRole(role, ROLES_MANAGE_USERS) ? 'flex' : 'none';
 };
 
-// ══ 4. navTo PATCH — block OT for unauthorized ══
+// ══ 4. navTo PATCH — block unauthorized pages ══
 var _origNavTo = navTo;
 navTo = function(page){
   var role = SESSION && SESSION.role;
-  if(page === 'otdetails' && !hasRole(role, ROLES_OT_ACCESS)) return;
-  if(page === 'users'     && !hasRole(role, ROLES_MANAGE_USERS)) return;
+  // Attendance → ROLES_ATT_VIEW فقط
+  if(page === 'attendance' && !hasRole(role, ROLES_ATT_VIEW)) return;
+  // Users → ROLES_MANAGE_USERS فقط
+  if(page === 'users' && !hasRole(role, ROLES_MANAGE_USERS)) return;
+  // Data / Details of Data → ROLES_VIEW_DATA فقط
   if((page === 'data' || page === 'detailsofdata') && !hasRole(role, ROLES_VIEW_DATA)) return;
   _origNavTo(page);
 };
 
-// ══ 5. Attendance — Shift filtering by role ══
-var _origLoadAtt = loadAttendance;
-loadAttendance = function(){
+// ══ 5. Home — Weekly Target مخفي للـ QTC/SL ══
+var _origRenderStats = renderStats;
+renderStats = function(data, user){
+  _origRenderStats(data, user);
   var role = SESSION && SESSION.role;
-
-  if(!hasRole(role, ROLES_ATT_ALL) && SESSION && SESSION.shift){
-    _attShift = SESSION.shift;
-    var attBtns = gid('attShiftBtns');
-    if(attBtns) attBtns.style.display = 'none';
-  } else {
-    var attBtns2 = gid('attShiftBtns');
-    if(attBtns2) attBtns2.style.display = '';
+  // لو مش في الـ list، اخفي قسم Weekly Target
+  if(!hasRole(role, ROLES_SEE_ALL_SHIFTS)){
+    var targetOuter = gid('homeTargetOuter');
+    if(targetOuter) targetOuter.style.display = 'none';
+    // كمان السطر اللي فوقيه (sec-hdr)
+    var allHdrs = document.querySelectorAll('#statsArea .sec-hdr');
+    allHdrs.forEach(function(h){ if(h.textContent.indexOf('Weekly Target') !== -1) h.style.display = 'none'; });
   }
-  _origLoadAtt();
 };
 
-// ══ 6. Details of Attendance — Shift filtering by role ══
-var _origLoadAttDetails = loadAttDetails;
-loadAttDetails = function(){
-  var role = SESSION && SESSION.role;
+// ══ 6. Home / Data / Labelers — فلترة الشيفت حسب الدور ══
 
-  if(!hasRole(role, ROLES_ATT_DETAILS_ALL) && SESSION && SESSION.shift){
-    _attShift2 = SESSION.shift;
-    var attBtns2 = gid('attShiftBtns2');
-    if(attBtns2) attBtns2.style.display = 'none';
-  } else {
-    var attBtns2b = gid('attShiftBtns2');
-    if(attBtns2b) attBtns2b.style.display = '';
-  }
-  _origLoadAttDetails();
+// getStats original بيبعت TOKEN و from و to — ما بنلمسوش
+// بس لما الداتا ترجع، الـ QTC/SL/Qt يشوفوا شيفتهم بس
+
+// override loadStats لإخفاء target لغير المخوّلين
+var _origLoadStats = loadStats;
+loadStats = function(){
+  _origLoadStats();
 };
 
-// ══ 7. Details of Data — QTC & SL شايفين شيفتهم + Over Shift ══
+// ══ 7. Data Page — فلترة حسب الشيفت للـ QTC/SL ══
+var _origLoadData = loadData;
+loadData = function(){
+  var from = getFilterISO(true), to = getFilterISO(false);
+  shtml('dataArea','<div class="loading"><div class="spin"></div> Loading data...</div>');
+  google.script.run
+    .withSuccessHandler(function(r){
+      if(r.err){ shtml('dataArea','<div class="empty">'+r.err+'</div>'); return; }
+      r.data.sort(function(a,b){ return new Date(b[F.date]||0)-new Date(a[F.date]||0); });
+      // فلترة حسب الشيفت لو الدور يحتاج ذلك
+      var role = SESSION && SESSION.role;
+      if(!hasRole(role, ROLES_SEE_ALL_SHIFTS) && SESSION && SESSION.shift){
+        var myShift = SESSION.shift;
+        r.data = r.data.filter(function(row){
+          var sh = nShift(row[F.shift]||'');
+          return sh === myShift || sh === 'Over Shift';
+        });
+      }
+      dataAll = r.data; dataPage = 1; renderDataFiltered();
+      if(gid('pgDetailsOfData') && gid('pgDetailsOfData').style.display !== 'none') renderDetailsOfData();
+    })
+    .withFailureHandler(function(e){ shtml('dataArea','<div class="empty">'+e.message+'</div>'); })
+    .getStats(TOKEN, from, to);
+};
+
+// ══ 8. Top Labelers — فلترة حسب الشيفت ══
+var _origLoadLabelers = loadLabelers;
+loadLabelers = function(){
+  var from = getFilterISO(true), to = getFilterISO(false);
+  shtml('labelersArea','<div class="loading"><div class="spin"></div> Loading Labeler Leaderboard...</div>');
+  google.script.run
+    .withSuccessHandler(function(r){
+      if(r.err){ shtml('labelersArea','<div class="empty">'+r.err+'</div>'); return; }
+      var role = SESSION && SESSION.role;
+      var data = r.data;
+      if(!hasRole(role, ROLES_SEE_ALL_SHIFTS) && SESSION && SESSION.shift){
+        var myShift = SESSION.shift;
+        data = data.filter(function(row){
+          var sh = nShift(row[F.shift]||'');
+          return sh === myShift || sh === 'Over Shift';
+        });
+      }
+      renderLabelersPage(data);
+    })
+    .withFailureHandler(function(e){ shtml('labelersArea','<div class="empty">'+e.message+'</div>'); })
+    .getStats(TOKEN, from, to);
+};
+
+// ══ 9. Details of Data — فلترة حسب الشيفت ══
 var _origRenderDod = renderDetailsOfData;
 renderDetailsOfData = function(){
   var role = SESSION && SESSION.role;
-  if(hasRole(role, ROLES_OWN) && SESSION && SESSION.shift){
+  if(!hasRole(role, ROLES_SEE_ALL_SHIFTS) && SESSION && SESSION.shift){
     var myShift = SESSION.shift;
     var _origDataAll = dataAll;
     dataAll = _origDataAll.filter(function(r){
-      var sh = nShift(r[F.shift] || '');
+      var sh = nShift(r[F.shift]||'');
       return sh === myShift || sh === 'Over Shift';
     });
     _origRenderDod();
@@ -3822,7 +4023,57 @@ renderDetailsOfData = function(){
   }
 };
 
-// ══ 9. Users Page — SV / SSV شايفين شيفتهم بس ══
+// ══ 10. Attendance — شايف شيفته بس لو مش في ROLES_ATT_VIEW ══
+// (أصلاً الصفحة مخفية لهم، لكن كحماية إضافية)
+var _origLoadAtt = loadAttendance;
+loadAttendance = function(){
+  var role = SESSION && SESSION.role;
+  if(!hasRole(role, ROLES_ATT_VIEW)) return; // حماية إضافية
+  var attBtns = gid('attShiftBtns');
+  if(attBtns) attBtns.style.display = hasRole(role, ROLES_ATT_DETAILS_ALL) ? '' : 'none';
+  if(!hasRole(role, ROLES_ATT_DETAILS_ALL) && SESSION && SESSION.shift){
+    _attShift = SESSION.shift;
+  }
+  _origLoadAtt();
+};
+
+// ══ 11. Details of Attendance — فلترة حسب الشيفت ══
+var _origLoadAttDetails = loadAttDetails;
+loadAttDetails = function(){
+  var role = SESSION && SESSION.role;
+  var attBtns2 = gid('attShiftBtns2');
+  if(!hasRole(role, ROLES_ATT_DETAILS_ALL) && SESSION && SESSION.shift){
+    _attShift2 = SESSION.shift;
+    if(attBtns2) attBtns2.style.display = 'none';
+  } else {
+    if(attBtns2) attBtns2.style.display = '';
+  }
+  _origLoadAttDetails();
+};
+
+// ══ 12. OT Details — فلترة حسب الشيفت ══
+var _origLoadOtDetails = loadOtDetails;
+loadOtDetails = function(){
+  var role = SESSION && SESSION.role;
+  // OT: نحمّل كل البيانات، لكن لو مش admin/sm/ssv/sv → نفلتر في الـ render
+  _origLoadOtDetails();
+};
+
+// patch renderOtDetails لفلترة حسب الشيفت لغير المخوّلين
+var _origRenderOtDetails = renderOtDetails;
+renderOtDetails = function(data){
+  var role = SESSION && SESSION.role;
+  if(!hasRole(role, ROLES_OT_ALL) && SESSION && SESSION.shift){
+    var myShift = SESSION.shift;
+    data = (data||[]).filter(function(r){
+      var sh = (r.otShift || r.shift || '').trim();
+      return sh === myShift || sh === 'Over Shift';
+    });
+  }
+  _origRenderOtDetails(data);
+};
+
+// ══ 13. Users Page ══
 var _origLoadUsers = loadUsers;
 loadUsers = function(){
   var role = SESSION && SESSION.role;
@@ -3838,30 +4089,30 @@ loadUsers = function(){
 };
 
 function _renderUsersPatch(users, pending){
-  var role   = SESSION && SESSION.role;
+  var role    = SESSION && SESSION.role;
   var myShift = SESSION && SESSION.shift;
-  var isFullAdmin = hasRole(role, ['admin','sm','qtc']);
-  var isSvSvv    = hasRole(role, ['sv','svv','qtc']);
+  var isFullAdmin = hasRole(role, ['admin','sm']);
+  var isSvSsvLevel = hasRole(role, ['sv','ssv']);
 
+  // SV/SSV يشوفوا بس الـ users اللي في شيفتهم
   var filteredUsers   = isFullAdmin ? users   : users.filter(function(u){ return u.shift === myShift; });
   var filteredPending = isFullAdmin ? pending : pending.filter(function(p){ return p.shift === myShift; });
 
-  var ROLE_ORD = ['admin','sm','svv','sv','sl','qtc','wla'];
+  var ROLE_ORD = ['admin','sm','ssv','sv','sl','qt','qtc','wla'];
   var sorted = filteredUsers.slice().sort(function(a,b){
-    var ai=ROLE_ORD.indexOf(a.role),bi=ROLE_ORD.indexOf(b.role);
-    return ai!==bi?ai-bi:(a.name||'').localeCompare(b.name||'');
+    var ai=ROLE_ORD.indexOf(a.role), bi=ROLE_ORD.indexOf(b.role);
+    return ai!==bi ? ai-bi : (a.name||'').localeCompare(b.name||'');
   });
 
   var pendingBadge = filteredPending.length
     ? ' <span style="background:#c5221f;color:white;font-size:10px;font-weight:800;padding:1px 7px;border-radius:10px;margin-left:4px">'+filteredPending.length+'</span>'
     : '';
 
-  var canAdd = isFullAdmin; 
   var addBtnEl = gid('btnAddUser');
-  if(addBtnEl) addBtnEl.style.display = canAdd ? 'flex' : 'none';
+  if(addBtnEl) addBtnEl.style.display = 'flex';
 
   var html =
-    '<div style="display:flex;gap:0;border-bottom:2px solid var(--blue-lt);margin-bottom:16px">' +
+    '<div style="display:flex;gap:0;border-bottom:2px solid var(--blue-lt);margin-bottom:16px">'+
     '<div class="qtc-tab active" id="uTabActive" onclick="switchUserTab(\'active\')" '+
     'style="border-bottom:2px solid var(--blue);color:var(--blue);margin-bottom:-2px">Active Users</div>'+
     '<div class="qtc-tab" id="uTabPending" onclick="switchUserTab(\'pending\')" '+
@@ -3874,12 +4125,12 @@ function _renderUsersPatch(users, pending){
     '<th>Role</th><th>Shift</th><th>Status</th><th>Actions</th>'+
     '</tr></thead><tbody>'+
     sorted.map(function(u){
-      var canEdit = isFullAdmin || (isSvSvv && u.shift === myShift);
+      var canEdit = isFullAdmin || (isSvSsvLevel && u.shift === myShift);
       var canDel  = isFullAdmin;
       return '<tr>'+
         '<td class="left bold">'+titleCase(u.name||'-')+'</td>'+
         '<td class="left" style="font-size:12px;color:var(--gray)">'+(u.email||'-')+'</td>'+
-        '<td><span class="badge b-'+(u.role||'qtc')+'">'+(u.role==='svv'?'SSV':(u.role||'-').toUpperCase())+'</span></td>'+
+        '<td><span class="badge b-'+(u.role||'qtc')+'">'+((u.role||'-')==='ssv'?'SSV':(u.role||'-').toUpperCase())+'</span></td>'+
         '<td>'+(u.shift?'<span class="badge '+shiftBadge(u.shift)+'">'+u.shift+'</span>':'<span style="color:var(--gray);font-size:12px">All</span>')+'</td>'+
         '<td><span class="badge '+(u.active!==false?'b-active':'b-inactive')+'">'+(u.active!==false?'Active':'Inactive')+'</span></td>'+
         '<td>'+
@@ -3890,27 +4141,25 @@ function _renderUsersPatch(users, pending){
     '</tbody></table></div></div>'+
 
     '<div id="uPanelPending" style="display:none">'+
-    (filteredPending.length===0
+    (filteredPending.length === 0
       ? '<div class="empty">No pending requests 🎉</div>'
       : '<div class="tbl-card"><table><thead><tr>'+
         '<th class="left">Name</th><th class="left">Email</th><th>Shift</th><th>Actions</th>'+
         '</tr></thead><tbody>'+
         filteredPending.map(function(p){
-          var canApprove = hasRole(role, ROLES_APPROVE_USERS); 
-          
+          var canApprove = hasRole(role, ROLES_APPROVE_USERS);
           return '<tr>'+
             '<td class="left bold">'+titleCase(p.name||'-')+'</td>'+
             '<td class="left" style="font-size:12px;color:var(--gray)">'+(p.email||'-')+'</td>'+
             '<td>'+(p.shift?'<span class="badge '+shiftBadge(p.shift)+'">'+p.shift+'</span>':'—')+'</td>'+
             '<td style="display:flex;gap:6px;align-items:center">'+
-            
-            (canApprove ?  
-              '<button class="fbtn fbtn-primary" style="padding:6px 14px;font-size:12px" '+
-              'onclick="openApproveModal('+p.id+',\''+encodeURIComponent(p.name)+'\')">✓ Approve</button>'+
-              '<button class="icon-btn ib-del" '+
-              'onclick="declineUser('+p.id+',\''+encodeURIComponent(p.name)+'\')">✕ Decline</button>'
-            : '<span style="font-size:11px;color:var(--gray);background:var(--gray-lt);padding:4px 8px;border-radius:6px">No Permission</span>' ) +
-            
+            (canApprove
+              ? '<button class="fbtn fbtn-primary" style="padding:6px 14px;font-size:12px" '+
+                'onclick="openApproveModal('+p.id+',\''+encodeURIComponent(p.name)+'\')">✓ Approve</button>'+
+                '<button class="icon-btn ib-del" '+
+                'onclick="declineUser('+p.id+',\''+encodeURIComponent(p.name)+'\')">✕ Decline</button>'
+              : '<span style="font-size:11px;color:var(--gray);background:var(--gray-lt);padding:4px 8px;border-radius:6px">No Permission</span>'
+            )+
             '</td></tr>';
         }).join('')+
         '</tbody></table></div>'
@@ -3920,31 +4169,25 @@ function _renderUsersPatch(users, pending){
   shtml('usersArea', html);
 }
 
-// ══ 10. حماية دوال الـ Approve والـ Decline وترتيب الرتب ══
+// ══ 14. openApproveModal — Role Hierarchy ══
 var _origOpenApproveModal = openApproveModal;
 openApproveModal = function(rowId, encodedName){
   var role = SESSION && SESSION.role;
-  if (!hasRole(role, ROLES_APPROVE_USERS)) {
-    toast("You don't have permission to approve requests", "err");
-    return; 
-  }
-  
+  if(!hasRole(role, ROLES_APPROVE_USERS)){ toast("No permission to approve", "err"); return; }
   _approveRowId = rowId;
   var name = decodeURIComponent(encodedName);
-  
-  // 👈 تطبيق هرم الصلاحيات 
-  var allowedRoles = [];
-  if (role === 'admin') allowedRoles = ['admin', 'sm', 'svv', 'sv', 'qt', 'wla', 'qtc', 'sl'];
-  else if (role === 'sm') allowedRoles = ['sm', 'svv', 'sv', 'qt', 'wla', 'qtc', 'sl'];
-  else if (role === 'svv') allowedRoles = ['svv', 'sv', 'qt', 'wla', 'qtc', 'sl'];
-  else if (role === 'sv') allowedRoles = ['sv', 'qt', 'wla', 'qtc', 'sl'];
-  else allowedRoles = ['qt', 'wla', 'qtc', 'sl'];
 
-  var roleLabels = {'admin':'Admin', 'sm':'SM', 'svv':'SSV', 'sv':'SV', 'qt':'QT', 'wla':'WLA', 'qtc':'QTC', 'sl':'SL'};
+  // هرم الصلاحيات — كل رتبة تقدر تضيف رتب أقل منها بس
+  var allowedRoles;
+  if(role === 'admin')     allowedRoles = ['admin','sm','ssv','sv','sl','qt','wla','qtc'];
+  else if(role === 'sm')   allowedRoles = ['sm','ssv','sv','sl','qt','wla','qtc'];
+  else if(role === 'ssv')  allowedRoles = ['ssv','sv','sl','qt','wla','qtc'];
+  else if(role === 'sv')   allowedRoles = ['sv','sl','qt','wla','qtc'];
+  else                     allowedRoles = ['qtc','sl','qt','wla'];
 
+  var roleLabels = {admin:'Admin',sm:'SM',ssv:'SSV',sv:'SV',sl:'SL',qt:'QT',wla:'WLA',qtc:'QTC'};
   var bd = document.createElement('div');
-  bd.id = 'approveBd';
-  bd.className = 'modal-backdrop show';
+  bd.id = 'approveBd'; bd.className = 'modal-backdrop show';
   bd.innerHTML =
     '<div class="modal" style="width:420px">'+
     '<div class="modal-hdr"><h3>Approve: '+titleCase(name)+'</h3>'+
@@ -3963,64 +4206,52 @@ openApproveModal = function(rowId, encodedName){
   document.body.appendChild(bd);
 };
 
-var _origDeclineUser = declineUser;
-declineUser = function(rowId, encodedName) {
-  var role = SESSION && SESSION.role;
-  if (!hasRole(role, ROLES_APPROVE_USERS)) {
-    toast("You don't have permission to decline requests", "err");
-    return;
-  }
-  _origDeclineUser(rowId, encodedName);
-};
-
-// ══ 11. Edit User Modal — نفس هرم الصلاحيات ══
+// ══ 15. openModal (Edit User) — Role Hierarchy ══
 var _origOpenModal = openModal;
 openModal = function(user){
   _origOpenModal(user);
   var role = SESSION && SESSION.role;
   var mRoleEl = gid('mRole');
-  
   if(mRoleEl){
-    var allowedRoles = [];
-    if (role === 'admin') allowedRoles = ['admin', 'sm', 'svv', 'sv', 'qt', 'wla', 'qtc', 'sl'];
-    else if (role === 'sm') allowedRoles = ['sm', 'svv', 'sv', 'qt', 'wla', 'qtc', 'sl'];
-    else if (role === 'svv') allowedRoles = ['svv', 'sv', 'qt', 'wla', 'qtc', 'sl'];
-    else if (role === 'sv') allowedRoles = ['sv', 'qt', 'wla', 'qtc', 'sl'];
-    else allowedRoles = ['qt', 'wla', 'qtc', 'sl'];
-
-    var roleLabels = {'admin':'Admin', 'sm':'SM', 'svv':'SSV', 'sv':'SV', 'qt':'QT', 'wla':'WLA', 'qtc':'QTC', 'sl':'SL'};
+    var allowedRoles;
+    if(role === 'admin')     allowedRoles = ['admin','sm','ssv','sv','sl','qt','wla','qtc'];
+    else if(role === 'sm')   allowedRoles = ['sm','ssv','sv','sl','qt','wla','qtc'];
+    else if(role === 'ssv')  allowedRoles = ['ssv','sv','sl','qt','wla','qtc'];
+    else if(role === 'sv')   allowedRoles = ['sv','sl','qt','wla','qtc'];
+    else                     allowedRoles = ['qtc','sl','qt','wla'];
+    var roleLabels = {admin:'Admin',sm:'SM',ssv:'SSV',sv:'SV',sl:'SL',qt:'QT',wla:'WLA',qtc:'QTC'};
     mRoleEl.innerHTML = allowedRoles.map(function(r){ return '<option value="'+r+'">'+roleLabels[r]+'</option>'; }).join('');
     if(user && allowedRoles.indexOf(user.role) !== -1) mRoleEl.value = user.role;
   }
-
-  if(!hasRole(role, ['admin','sm','qtc']) && user){
+  // SV/SSV: إخفاء تغيير الـ email والـ password
+  if(!hasRole(role, ['admin','sm']) && user){
     var emailRow = gid('emailRow');
     if(emailRow) emailRow.style.display = 'none';
-    var pwdInp = gid('mPwd');
-    if(pwdInp && pwdInp.closest('.inp-wrap')) pwdInp.closest('.inp-wrap').style.display = 'none';
-    var activeRow = gid('activeRow');
-    if(activeRow) activeRow.style.display = 'block';
+    var pwdWrap = gid('mPwd');
+    if(pwdWrap && pwdWrap.closest('.inp-wrap')) pwdWrap.closest('.inp-wrap').style.display = 'none';
   }
 };
 
-// ══ 12. Bottom Nav — إخفاء OT من الموبايل لو مش في الـ list ══
-(function(){
-  var bnOt = document.querySelector('#bottomNav [data-page="otdetails"]');
-  if(bnOt){ bnOt.style.display = 'none'; }
-})();
+// ══ 16. declineUser — Permission Check ══
+var _origDeclineUser = declineUser;
+declineUser = function(rowId, encodedName){
+  var role = SESSION && SESSION.role;
+  if(!hasRole(role, ROLES_APPROVE_USERS)){ toast("No permission to decline", "err"); return; }
+  _origDeclineUser(rowId, encodedName);
+};
 
-// ══ FIX: Tab active underline ══
+// ══ 17. switchUserTab ══
 switchUserTab = function(tab){
   var isA = tab === 'active';
   var pA = gid('uPanelActive'), pP = gid('uPanelPending');
   if(pA) pA.style.display = isA ? 'block' : 'none';
-  if(pP) pP.style.display = isA ? 'none' : 'block';
+  if(pP) pP.style.display = isA ? 'none'  : 'block';
   var tA = gid('uTabActive'), tP = gid('uTabPending');
   if(tA){ tA.style.borderBottom = isA ? '2px solid var(--blue)' : '2px solid transparent'; tA.style.color = isA ? 'var(--blue)' : 'var(--gray)'; }
   if(tP){ tP.style.borderBottom = !isA ? '2px solid var(--blue)' : '2px solid transparent'; tP.style.color = !isA ? 'var(--blue)' : 'var(--gray)'; }
 };
-// ══ END OF PATCH ══
-console.log('✅ METI Roles Patch Loaded (With Approve Permissions & Hierarchy)');
+
+console.log('✅ METI Permissions Patch v2 Loaded');
  function exportNotSubmitted(people, unit, shift) {
   var btn = event.currentTarget || event.target;
   var origText = btn.innerHTML;
@@ -4068,6 +4299,144 @@ console.log('✅ METI Roles Patch Loaded (With Approve Permissions & Hierarchy)'
     console.error(e);
   }
 }
+
+// ══ AUTO RELOAD ══
+var _arEnabled = false;
+var _arTimer = null;
+var _arCdTimer = null;
+var _arRemaining = 0;
+
+function toggleAutoReload() {
+  _arEnabled = !_arEnabled;
+  var tog = gid('arToggle');
+  var thumb = gid('arThumb');
+  var lbl = gid('arLabel');
+  var sel = gid('arInterval');
+  var cd = gid('arCountdown');
+  var wrap = gid('autoReloadWrap');
+
+  if (_arEnabled) {
+    // ON — أخضر
+    tog.style.background = '#1e8e3e';  // ✅ اللون الفعلي بدل var(--green)
+    thumb.style.left = '20px';
+    lbl.style.color = '#1e8e3e';
+    lbl.textContent = 'ON';
+    if (sel) sel.style.display = 'inline-block';
+    if (cd) cd.style.display = 'inline-block';
+    wrap.style.borderColor = '#1e8e3e';
+    wrap.style.background = '#d4edda';
+    startAutoReload();
+  } else {
+    // OFF — رمادي
+    tog.style.background = '#ccc';
+    thumb.style.left = '2px';
+    lbl.style.color = '#5f6368';
+    lbl.textContent = 'OFF';
+    if (sel) sel.style.display = 'none';
+    if (cd) { cd.style.display = 'none'; cd.textContent = ''; }
+    wrap.style.borderColor = '#e0e0e0';
+    wrap.style.background = '#f1f3f4';
+    stopAutoReload();
+  }
+}
+
+function startAutoReload() {
+  stopAutoReload();
+  if (!_arEnabled) return;
+  var sel = gid('arInterval');
+  var ms = sel ? parseInt(sel.value) : 60000;
+  _arRemaining = ms / 1000;
+  updateCountdown();
+  _arCdTimer = setInterval(function() {
+    _arRemaining--;
+    updateCountdown();
+    if (_arRemaining <= 0) {
+      doSilentReload();
+      _arRemaining = ms / 1000;
+    }
+  }, 1000);
+}
+
+function stopAutoReload() {
+  if (_arTimer) { clearTimeout(_arTimer); _arTimer = null; }
+  if (_arCdTimer) { clearInterval(_arCdTimer); _arCdTimer = null; }
+}
+
+function updateCountdown() {
+  var cd = gid('arCountdown');
+  if (!cd) return;
+  var m = Math.floor(_arRemaining / 60);
+  var s = _arRemaining % 60;
+  cd.textContent = m > 0 ? m + 'm' + ('0'+s).slice(-2) + 's' : s + 's';
+}
+
+function doSilentReload() {
+  if (!SESSION || !TOKEN) return;
+  // حفظ الـ scroll position
+  var scrollY = window.scrollY || 0;
+  
+  // نعرف إيه الصفحة النشطة
+  var activePage = null;
+  var pagesKeys = Object.keys(PAGES);
+  for (var i = 0; i < pagesKeys.length; i++) {
+    var pg = gid(PAGES[pagesKeys[i]].pg);
+    if (pg && pg.style.display !== 'none') { activePage = pagesKeys[i]; break; }
+  }
+  if (!activePage) return;
+
+  // نعمل reload للبيانات بدون تغيير أي view
+  var from = getFilterISO(true), to = getFilterISO(false);
+  google.script.run
+    .withSuccessHandler(function(r) {
+      if (r && !r.err && r.data) {
+        // تحديث الكاش
+        if (activePage === 'home') {
+          cachedStats = r.data; cachedUser = r.user;
+          // تحديث الأرقام في الكروت فقط بدون re-render
+          updateCardsOnly(r.data);
+        } else if (activePage === 'data' || activePage === 'detailsofdata') {
+          r.data.sort(function(a,b){ return new Date(b[F.date]||0)-new Date(a[F.date]||0); });
+          dataAll = r.data;
+          if (activePage === 'data') renderDataFiltered();
+          else renderDetailsOfData();
+        } else if (activePage === 'labelers') {
+          renderLabelersPage(r.data);
+        } else if (activePage === 'qtc') {
+          renderQtcPage(r.data);
+        } else if (activePage === 'qtcstats') {
+          // skip — no auto reload for qtcstats
+        }
+        // إرجاع الـ scroll
+        setTimeout(function(){ window.scrollTo(0, scrollY); }, 50);
+        toast('Auto reloaded ✓', 'ok');
+      }
+    })
+    .withFailureHandler(function(){})
+    .getStats(TOKEN, from, to);
+}
+
+function updateCardsOnly(data) {
+  // تحديث أرقام الكروت الأربعة بدون أي تغيير للـ view
+  var lf=0,lq=0,lif=0,liq=0;
+  data.forEach(function(r){
+    var mod=(r[F.modality]||'').toLowerCase(),pass=(r[F.pass]||'').toUpperCase();
+    var isL=mod.indexOf('lane')!==-1,isLi=mod.indexOf('lidar')!==-1;
+    if(isL&&pass==='FP')lf++;if(isL&&pass==='QA')lq++;
+    if(isLi&&pass==='FP')lif++;if(isLi&&pass==='QA')liq++;
+  });
+  var cards = document.querySelectorAll('#statsArea .card .card-val');
+  var vals = [lf, lq, lif, liq];
+  cards.forEach(function(el, i){ if(vals[i] !== undefined) el.textContent = vals[i]; });
+}
+
+// إعادة تشغيل لما يتغير الـ interval
+document.addEventListener('change', function(e){
+  if (e.target && e.target.id === 'arInterval' && _arEnabled) startAutoReload();
+});
+
+// إيقاف الـ auto reload لو الـ session منتهي
+var _origDoLogout = doLogout;
+doLogout = function(){ stopAutoReload(); _origDoLogout(); };
 </script>
 </body>
 </html>
