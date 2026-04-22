@@ -3667,6 +3667,28 @@ function openOtModal(r) {
   gid('detailBd').classList.add('show');
 }
 </script> <script>
+  // ═══════════════════════════════════════════════════════════
+// ══ EXCEPTION PATCH: VIP Access for Abdelrahman Omar ══
+// ═══════════════════════════════════════════════════════════
+
+// الاحتفاظ بنسخة من دالة فحص الصلاحيات الأصلية
+var _origHasRole = typeof hasRole === 'function' ? hasRole : function(r, arr) { return (arr||[]).indexOf(r) !== -1; };
+
+// إعادة كتابة الدالة لعمل الاستثناء
+hasRole = function(role, roleArray) {
+  if (SESSION) {
+    var sName = (SESSION.name || '').trim().toLowerCase();
+    var sEmail = (SESSION.email || '').trim().toLowerCase();
+    
+    // التحقق من الاسم أو الإيميل الخاص به
+    if (sName === 'abdelrahman omar' || sEmail === 'abdelrahman omar@meti.ai') {
+      return true; // إعطاء الصلاحية دائمًا كأنه Admin في كل الصفحات
+    }
+  }
+  
+  // لباقي المستخدمين، يتم تطبيق نظام الصلاحيات العادي
+  return _origHasRole(role, roleArray);
+};
 // ═══════════════════════════════════════════════════════════
 // METI DASHBOARD — ROLE PERMISSIONS PATCH
 // ═══════════════════════════════════════════════════════════
